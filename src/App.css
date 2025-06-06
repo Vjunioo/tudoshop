@@ -1,0 +1,291 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f8;
+  box-sizing: border-box;
+}
+
+.app-header, .app-footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #0599f0, #29294d);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+  transition: padding 0.3s ease, min-height 0.3s ease;
+  border-radius: 0;
+}
+
+.header-content, .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-area:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.search-area {
+  flex: 1;
+  display: flex;
+  margin: 0 20px;
+  max-width: 600px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 10px 16px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-button,
+.cart-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+}
+
+.user-button:hover,
+.cart-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.app-footer {
+  padding: 10px 0;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.back-to-top {
+  width: 100%;
+  background: linear-gradient(135deg, #2875a8, #727272); 
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: bold;
+  user-select: none;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  background: linear-gradient(135deg, #2875a8, #868688);
+  outline: none;
+}
+
+.promo-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.promo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.6);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.promo-section:hover .promo-image {
+  filter: brightness(0.8);
+}
+
+.promo-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 90%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.promo-content h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.promo-button {
+  background-color: #febd69;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #e6a950;
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .app-header, .app-footer {
+    padding: 6px 0;
+    min-height: 50px;
+    border-radius: 0;
+  }
+
+  .header-content,
+  .footer-content {
+    max-width: 100%;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-section {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .promo-image {
+    height: 200px;
+  }
+
+  .promo-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .promo-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .promo-button {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+
+  .header-content {
+    gap: 12px;
+  }
+
+  .logo-area {
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .search-area {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+
+  .search-button {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .user-area {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .user-button,
+  .cart-button {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
