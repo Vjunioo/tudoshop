@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tudoshop/static/css/main.2f227960.css",
-    "main.js": "/tudoshop/static/js/main.8860c30d.js",
+    "main.js": "/tudoshop/static/js/main.bff51ab8.js",
     "static/js/453.ce58f9bb.chunk.js": "/tudoshop/static/js/453.ce58f9bb.chunk.js",
     "index.html": "/tudoshop/index.html",
     "main.2f227960.css.map": "/tudoshop/static/css/main.2f227960.css.map",
-    "main.8860c30d.js.map": "/tudoshop/static/js/main.8860c30d.js.map",
+    "main.bff51ab8.js.map": "/tudoshop/static/js/main.bff51ab8.js.map",
     "453.ce58f9bb.chunk.js.map": "/tudoshop/static/js/453.ce58f9bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f227960.css",
-    "static/js/main.8860c30d.js"
+    "static/js/main.bff51ab8.js"
   ]
 }
