@@ -7,6 +7,7 @@ Este projeto é uma aplicação React que consome a API pública Fake Store para
 ## Requisitos
 
 - Node.js (versão 16 ou superior recomendada)
+- 
 - npm ou yarn
 - npm install Styled Components
 
@@ -17,13 +18,13 @@ Este projeto é uma aplicação React que consome a API pública Fake Store para
 ### 1. Clone o repositório
 
 ```bash
-git clone https://seu-repositorio.git
+git clone https://Vjunioo.git
 ```
 
 ### 2. Entre na pasta do projeto
 
 ```bash
-cd nome-da-pasta-do-projeto
+cd ecommerce-app
 ```
 
 ### 3. Instale as dependências
@@ -75,7 +76,7 @@ http://localhost:3000
 ## Observações
 
 - A aplicação depende da API pública Fake Store (https://fakestoreapi.com/).
-- Certifique-se que sua conexão com a internet esteja ativa para carregar os produtos.
+- Certifique-se que a conexão com a internet esteja ativa para carregar os produtos.
 - Em caso de falha na requisição, uma mensagem de erro será exibida.
 
 ---
