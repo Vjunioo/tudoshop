@@ -3,11 +3,10 @@ import ProductList from "./components/ProductList";
 import "./App.css";
 
 function App() {
-  const [loadingSite, setLoadingSite] = useState(true); // novo loading geral
-  const [loading, setLoading] = useState(true); // já usado no fetch
+  const [loadingSite, setLoadingSite] = useState(true); /
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Espera 1.5 segundos antes de mostrar o site
     const timer = setTimeout(() => {
       setLoadingSite(false);
     }, 1500);
